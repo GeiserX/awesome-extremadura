@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <clipPath id="r"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#14141f"/>
+    </linearGradient>
+    <filter id="b1"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="800" height="200" fill="url(#bg)"/>
+    <ellipse cx="150" cy="180" rx="200" ry="120" fill="#00703C" opacity="0.15" filter="url(#b1)"/>
+    <ellipse cx="650" cy="20" rx="200" ry="120" fill="#FFFFFF" opacity="0.06" filter="url(#b1)"/>
+    <rect width="800" height="2" fill="#00703C" opacity="0.6"/>
+    <text x="400" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" fill="#fff" font-weight="700" letter-spacing="1">awesome-extremadura</text>
+    <rect x="280" y="86" width="240" height="2" rx="1" fill="#00703C" opacity="0.5"/>
+    <text x="400" y="116" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" font-weight="300" letter-spacing="3">SOFTWARE OPEN SOURCE PARA EXTREMADURA</text>
+    <!-- Encina (holm oak) silhouettes - symbol of the dehesa extremena -->
+    <g fill="#00703C" opacity="0.4" transform="translate(400,160)">
+      <ellipse cx="-60" cy="-8" rx="14" ry="10"/><rect x="-62" y="2" width="4" height="8"/>
+      <ellipse cx="-20" cy="-12" rx="18" ry="13"/><rect x="-22" y="1" width="4" height="10"/>
+      <ellipse cx="25" cy="-6" rx="12" ry="9"/><rect x="23" y="3" width="4" height="7"/>
+      <ellipse cx="65" cy="-10" rx="16" ry="11"/><rect x="63" y="1" width="4" height="9"/>
+    </g>
+  </g>
+</svg>
