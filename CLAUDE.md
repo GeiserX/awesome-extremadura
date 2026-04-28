@@ -1,4 +1,4 @@
-# AGENTS.md — awesome-extremadura
+# CLAUDE.md — awesome-extremadura
 
 ## Propósito
 
