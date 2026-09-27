@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <clipPath id="b-clip"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="b-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="45%" stop-color="#15141f"/><stop offset="75%" stop-color="#3c2720"/><stop offset="100%" stop-color="#9a5a2c"/>
+    </linearGradient>
+    <linearGradient id="b-rock" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3a2c26"/><stop offset="30%" stop-color="#1f1a20"/><stop offset="100%" stop-color="#110f15"/>
+    </linearGradient>
+    <linearGradient id="b-water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b8703a"/><stop offset="100%" stop-color="#3a2418"/>
+    </linearGradient>
+    <filter id="b-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <g clip-path="url(#b-clip)">
+    <rect width="800" height="200" fill="url(#b-bg)"/>
+    <ellipse cx="430" cy="200" rx="280" ry="60" fill="#f0a050" opacity="0.25" filter="url(#b-blur)"/>
+    <rect width="800" height="2" fill="#d98a3a" opacity="0.5"/>
+    <!-- far sierra -->
+    <path d="M0 176 C90 160 160 166 240 160 C330 152 390 168 470 162 C540 156 590 160 640 154 L640 200 L0 200 Z" fill="#2a1c1a" opacity="0.85"/>
+    <!-- sierra ridge with the Castillo de Monfragüe -->
+    <path fill="#120f14" d="M0 200 L0 132 C24 126 50 116 76 114 L136 114 C160 118 176 128 196 140 C236 162 280 172 330 182 L350 200 Z"/>
+    <g fill="#120f14">
+      <rect x="92" y="80" width="18" height="36"/>
+      <rect x="90" y="75" width="4" height="6"/><rect x="96.5" y="75" width="4" height="6"/><rect x="103" y="75" width="4" height="6"/><rect x="108" y="75" width="4" height="6"/>
+      <rect x="110" y="96" width="24" height="20"/>
+      <rect x="110" y="92" width="3" height="5"/><rect x="116" y="92" width="3" height="5"/><rect x="122" y="92" width="3" height="5"/><rect x="128" y="92" width="3" height="5"/><rect x="131" y="92" width="3" height="5"/>
+      <rect x="68" y="100" width="24" height="16"/>
+      <path d="M66 101 L80 92 L94 101 Z"/>
+      <rect x="77" y="86" width="5" height="7"/>
+    </g>
+    <!-- Peña Falcón above the Tajo -->
+    <path fill="url(#b-rock)" d="M616 200 L622 170 L628 150 L626 128 L634 104 L632 84 L642 62 L648 44 L660 34 L668 38 L676 26 L688 30 L696 46 L710 52 L718 70 L736 80 L748 98 L770 108 L786 124 L800 128 L800 200 Z"/>
+    <g stroke="#7a5238" stroke-width="1.1" fill="none" opacity="0.5" stroke-linecap="round">
+      <path d="M664 40 L652 90 L646 140"/>
+      <path d="M680 30 L672 84 L668 150"/>
+      <path d="M700 52 L692 110 L690 170"/>
+      <path d="M724 76 L718 130"/>
+    </g>
+    <path fill="#e89a58" opacity="0.35" d="M616 200 L622 170 L628 150 L626 128 L634 104 L632 84 L642 62 L648 44 L660 34 L654 50 L646 70 L640 88 L642 106 L634 130 L636 152 L630 174 L626 200 Z"/>
+    <!-- Tajo -->
+    <path d="M330 182 C420 184 520 182 620 180 L616 200 L350 200 Z" fill="url(#b-water)" opacity="0.8"/>
+    <g stroke="#f4c08a" stroke-width="1" opacity="0.45" stroke-linecap="round">
+      <path d="M420 187 L470 187"/><path d="M500 192 L570 192"/><path d="M440 196 L476 196"/>
+    </g>
+    <!-- buitres leonados -->
+    <g fill="#c2946a">
+      <path transform="translate(104 50) rotate(-7) scale(0.9)" d="M-30 0 L-28.5 -2.2 L-27 -0.6 L-25.8 -3 L-24 -1 L-22.8 -3.4 L-21 -1.4 C-15 -3.4 -8 -3.2 -3.2 -1.8 C-2.2 -3.6 2.2 -3.6 3.2 -1.8 C8 -3.2 15 -3.4 21 -1.4 L22.8 -3.4 L24 -1 L25.8 -3 L27 -0.6 L28.5 -2.2 L30 0 C22 3.4 12 4.4 4 3.6 L3.4 8 L-3.4 8 L-4 3.6 C-12 4.4 -22 3.4 -30 0 Z" opacity="1"/>
+      <path transform="translate(172 26) rotate(6) scale(0.6)" d="M-30 0 L-28.5 -2.2 L-27 -0.6 L-25.8 -3 L-24 -1 L-22.8 -3.4 L-21 -1.4 C-15 -3.4 -8 -3.2 -3.2 -1.8 C-2.2 -3.6 2.2 -3.6 3.2 -1.8 C8 -3.2 15 -3.4 21 -1.4 L22.8 -3.4 L24 -1 L25.8 -3 L27 -0.6 L28.5 -2.2 L30 0 C22 3.4 12 4.4 4 3.6 L3.4 8 L-3.4 8 L-4 3.6 C-12 4.4 -22 3.4 -30 0 Z" opacity="0.8"/>
+      <path transform="translate(40 86) rotate(4) scale(0.5)" d="M-30 0 L-28.5 -2.2 L-27 -0.6 L-25.8 -3 L-24 -1 L-22.8 -3.4 L-21 -1.4 C-15 -3.4 -8 -3.2 -3.2 -1.8 C-2.2 -3.6 2.2 -3.6 3.2 -1.8 C8 -3.2 15 -3.4 21 -1.4 L22.8 -3.4 L24 -1 L25.8 -3 L27 -0.6 L28.5 -2.2 L30 0 C22 3.4 12 4.4 4 3.6 L3.4 8 L-3.4 8 L-4 3.6 C-12 4.4 -22 3.4 -30 0 Z" opacity="0.7"/>
+      <path transform="translate(600 30) rotate(8) scale(0.62)" d="M-30 0 L-28.5 -2.2 L-27 -0.6 L-25.8 -3 L-24 -1 L-22.8 -3.4 L-21 -1.4 C-15 -3.4 -8 -3.2 -3.2 -1.8 C-2.2 -3.6 2.2 -3.6 3.2 -1.8 C8 -3.2 15 -3.4 21 -1.4 L22.8 -3.4 L24 -1 L25.8 -3 L27 -0.6 L28.5 -2.2 L30 0 C22 3.4 12 4.4 4 3.6 L3.4 8 L-3.4 8 L-4 3.6 C-12 4.4 -22 3.4 -30 0 Z" opacity="0.85"/>
+      <path transform="translate(752 26) rotate(-9) scale(0.75)" d="M-30 0 L-28.5 -2.2 L-27 -0.6 L-25.8 -3 L-24 -1 L-22.8 -3.4 L-21 -1.4 C-15 -3.4 -8 -3.2 -3.2 -1.8 C-2.2 -3.6 2.2 -3.6 3.2 -1.8 C8 -3.2 15 -3.4 21 -1.4 L22.8 -3.4 L24 -1 L25.8 -3 L27 -0.6 L28.5 -2.2 L30 0 C22 3.4 12 4.4 4 3.6 L3.4 8 L-3.4 8 L-4 3.6 C-12 4.4 -22 3.4 -30 0 Z" opacity="0.9"/>
+    </g>
+    <g fill="#140f10">
+      <path transform="translate(560 142) rotate(-4) scale(0.55)" d="M-30 0 L-28.5 -2.2 L-27 -0.6 L-25.8 -3 L-24 -1 L-22.8 -3.4 L-21 -1.4 C-15 -3.4 -8 -3.2 -3.2 -1.8 C-2.2 -3.6 2.2 -3.6 3.2 -1.8 C8 -3.2 15 -3.4 21 -1.4 L22.8 -3.4 L24 -1 L25.8 -3 L27 -0.6 L28.5 -2.2 L30 0 C22 3.4 12 4.4 4 3.6 L3.4 8 L-3.4 8 L-4 3.6 C-12 4.4 -22 3.4 -30 0 Z" opacity="0.9"/>
+      <path transform="translate(470 156) rotate(6) scale(0.4)" d="M-30 0 L-28.5 -2.2 L-27 -0.6 L-25.8 -3 L-24 -1 L-22.8 -3.4 L-21 -1.4 C-15 -3.4 -8 -3.2 -3.2 -1.8 C-2.2 -3.6 2.2 -3.6 3.2 -1.8 C8 -3.2 15 -3.4 21 -1.4 L22.8 -3.4 L24 -1 L25.8 -3 L27 -0.6 L28.5 -2.2 L30 0 C22 3.4 12 4.4 4 3.6 L3.4 8 L-3.4 8 L-4 3.6 C-12 4.4 -22 3.4 -30 0 Z" opacity="0.8"/>
+    </g>
+    <text x="400" y="74" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700" letter-spacing="1">awesome-extremadura</text>
+    <text x="400" y="104" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.68" font-weight="400" letter-spacing="3">SOFTWARE OPEN SOURCE PARA EXTREMADURA</text>
+  </g>
+</svg>

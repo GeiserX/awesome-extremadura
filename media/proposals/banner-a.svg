@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <clipPath id="a-clip"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="a-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#14141f"/>
+    </linearGradient>
+    <linearGradient id="a-stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9c8669"/><stop offset="50%" stop-color="#65543f"/><stop offset="100%" stop-color="#2a231d"/>
+    </linearGradient>
+    <linearGradient id="a-bank" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#262430"/><stop offset="100%" stop-color="#121119"/>
+    </linearGradient>
+    <linearGradient id="a-water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b3a44"/><stop offset="100%" stop-color="#0c1a20"/>
+    </linearGradient>
+    <pattern id="a-courses" width="14" height="6" patternUnits="userSpaceOnUse">
+      <rect width="14" height="1" fill="#1c1712" opacity="0.35"/>
+      <rect x="9" y="1" width="1" height="5" fill="#1c1712" opacity="0.18"/>
+    </pattern>
+    <filter id="a-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <g clip-path="url(#a-clip)">
+    <rect width="800" height="200" fill="url(#a-bg)"/>
+    <ellipse cx="400" cy="190" rx="330" ry="90" fill="#c8955a" opacity="0.14" filter="url(#a-blur)"/>
+    <ellipse cx="660" cy="10" rx="200" ry="110" fill="#ffffff" opacity="0.05" filter="url(#a-blur)"/>
+    <rect width="800" height="2" fill="#b59a76" opacity="0.55"/>
+    <!-- Tajo gorge walls -->
+    <path d="M0 200 L0 96 L28 90 L52 104 L84 112 L120 132 L150 150 L150 200 Z" fill="#1e1d29"/>
+    <path d="M800 200 L800 92 L770 98 L742 94 L712 112 L680 132 L650 150 L650 200 Z" fill="#1e1d29"/>
+    <!-- Puente de Alcántara: six arches, arco de Trajano on the central pier -->
+    <path fill="url(#a-stone)" fill-rule="evenodd" d="M70 200 L70 128 L730 128 L730 200 Z
+      M86 200 L86 162 A28 28 0 0 1 142 162 L142 200 Z
+      M162 200 L162 180 A46 46 0 0 1 254 180 L254 200 Z
+      M274 200 L274 192 A58 58 0 0 1 390 192 L390 200 Z
+      M410 200 L410 191 A57 57 0 0 1 524 191 L524 200 Z
+      M544 200 L544 178 A44 44 0 0 1 632 178 L632 200 Z
+      M652 200 L652 163 A29 29 0 0 1 710 163 L710 200 Z"/>
+    <path fill="url(#a-courses)" fill-rule="evenodd" d="M70 200 L70 128 L730 128 L730 200 Z
+      M86 200 L86 162 A28 28 0 0 1 142 162 L142 200 Z
+      M162 200 L162 180 A46 46 0 0 1 254 180 L254 200 Z
+      M274 200 L274 192 A58 58 0 0 1 390 192 L390 200 Z
+      M410 200 L410 191 A57 57 0 0 1 524 191 L524 200 Z
+      M544 200 L544 178 A44 44 0 0 1 632 178 L632 200 Z
+      M652 200 L652 163 A29 29 0 0 1 710 163 L710 200 Z"/>
+    <!-- voussoir rings -->
+    <g fill="none" stroke="#b39c7b" stroke-width="1.2" opacity="0.5">
+      <path d="M81 162 A33 33 0 0 1 147 162"/>
+      <path d="M157 180 A51 51 0 0 1 259 180"/>
+      <path d="M269 192 A63 63 0 0 1 395 192"/>
+      <path d="M405 191 A62 62 0 0 1 529 191"/>
+      <path d="M539 178 A49 49 0 0 1 637 178"/>
+      <path d="M647 163 A34 34 0 0 1 715 163"/>
+    </g>
+    <!-- cutwaters on the piers -->
+    <g fill="#8a7559" opacity="0.55">
+      <path d="M146 200 L146 168 L152 162 L158 168 L158 200 Z"/>
+      <path d="M258 200 L258 186 L264 180 L270 186 L270 200 Z"/>
+      <path d="M394 200 L394 190 L400 184 L406 190 L406 200 Z"/>
+      <path d="M528 200 L528 184 L534 178 L540 184 L540 200 Z"/>
+      <path d="M636 200 L636 170 L642 164 L648 170 L648 200 Z"/>
+    </g>
+    <!-- parapet -->
+    <rect x="70" y="123" width="660" height="5" fill="#a8906f"/>
+    <rect x="70" y="128" width="660" height="1" fill="#2a231d" opacity="0.6"/>
+    <!-- triumphal arch -->
+    <g fill="#a8906f">
+      <path fill-rule="evenodd" d="M383 123 L383 108 L417 108 L417 123 Z M394 123 L394 116 A6 6 0 0 1 406 116 L406 123 Z"/>
+      <rect x="381" y="105" width="38" height="3"/>
+      <rect x="385" y="101" width="30" height="4"/>
+    </g>
+    <!-- Roman temple at the end of the bridge -->
+    <g fill="#6f5e49">
+      <path d="M36 110 L46 104 L56 110 Z"/>
+      <rect x="37" y="110" width="18" height="2"/>
+      <rect x="38.5" y="112" width="2" height="9"/><rect x="51.5" y="112" width="2" height="9"/>
+      <rect x="43" y="112" width="6" height="9" fill="#3f352a"/>
+      <rect x="36" y="121" width="20" height="3"/>
+    </g>
+    <!-- Tajo -->
+    <rect x="0" y="184" width="800" height="16" fill="url(#a-water)"/>
+    <g stroke="#c8955a" stroke-width="1" opacity="0.4" stroke-linecap="round">
+      <path d="M296 190 L336 190"/><path d="M430 193 L486 193"/><path d="M352 196 L378 196"/><path d="M500 189 L516 189"/>
+    </g>
+    <!-- banks in front of the piers -->
+    <path fill="url(#a-bank)" d="M0 200 L0 124 C30 126 60 140 86 160 C110 170 140 176 162 179 C200 184 236 188 268 190 C282 192 292 196 300 200 Z"/>
+    <path fill="url(#a-bank)" d="M800 200 L800 128 C770 134 740 150 710 160 C670 164 650 170 632 177 C600 183 560 187 532 190 C518 192 508 196 500 200 Z"/>
+    <text x="400" y="62" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700" letter-spacing="1">awesome-extremadura</text>
+    <text x="400" y="90" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.6" font-weight="400" letter-spacing="3">SOFTWARE OPEN SOURCE PARA EXTREMADURA</text>
+  </g>
+</svg>
