@@ -1,25 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
   <defs>
-    <clipPath id="r"><rect width="800" height="200" rx="16"/></clipPath>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#14141f"/>
+    <clipPath id="c-clip"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="c-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#17141a"/>
     </linearGradient>
-    <filter id="b1"><feGaussianBlur stdDeviation="40"/></filter>
+    <linearGradient id="c-rind" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5e3c1e"/><stop offset="35%" stop-color="#a8733a"/><stop offset="60%" stop-color="#b98144"/><stop offset="100%" stop-color="#4e3119"/>
+    </linearGradient>
+    <radialGradient id="c-cream" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#fbf0cf"/><stop offset="70%" stop-color="#ecd49a"/><stop offset="100%" stop-color="#c9a866"/>
+    </radialGradient>
+    <linearGradient id="c-board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3322"/><stop offset="100%" stop-color="#23170f"/>
+    </linearGradient>
+    <filter id="c-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+    <filter id="c-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
   </defs>
-  <g clip-path="url(#r)">
-    <rect width="800" height="200" fill="url(#bg)"/>
-    <ellipse cx="150" cy="180" rx="200" ry="120" fill="#00703C" opacity="0.15" filter="url(#b1)"/>
-    <ellipse cx="650" cy="20" rx="200" ry="120" fill="#FFFFFF" opacity="0.06" filter="url(#b1)"/>
-    <rect width="800" height="2" fill="#00703C" opacity="0.6"/>
-    <text x="400" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" fill="#fff" font-weight="700" letter-spacing="1">awesome-extremadura</text>
-    <rect x="280" y="86" width="240" height="2" rx="1" fill="#00703C" opacity="0.5"/>
-    <text x="400" y="116" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" font-weight="300" letter-spacing="3">SOFTWARE OPEN SOURCE PARA EXTREMADURA</text>
-    <!-- Encina (holm oak) silhouettes - symbol of the dehesa extremena -->
-    <g fill="#00703C" opacity="0.4" transform="translate(400,160)">
-      <ellipse cx="-60" cy="-8" rx="14" ry="10"/><rect x="-62" y="2" width="4" height="8"/>
-      <ellipse cx="-20" cy="-12" rx="18" ry="13"/><rect x="-22" y="1" width="4" height="10"/>
-      <ellipse cx="25" cy="-6" rx="12" ry="9"/><rect x="23" y="3" width="4" height="7"/>
-      <ellipse cx="65" cy="-10" rx="16" ry="11"/><rect x="63" y="1" width="4" height="9"/>
+  <g clip-path="url(#c-clip)">
+    <rect width="800" height="200" fill="url(#c-bg)"/>
+    <ellipse cx="690" cy="170" rx="200" ry="90" fill="#e0a452" opacity="0.16" filter="url(#c-blur)"/>
+    <ellipse cx="90" cy="150" rx="160" ry="90" fill="#8a55b0" opacity="0.13" filter="url(#c-blur)"/>
+    <rect width="800" height="2" fill="#d69a4a" opacity="0.55"/>
+    <!-- flores de cardo -->
+    <g>
+      <path d="M40 200 C42 190 36 184 30 180 L36 178 C30 172 22 170 18 164 L28 166 C26 158 30 152 30 146 L38 158 C42 152 42 146 46 140 L48 156 C54 152 60 154 66 150 L56 164 C62 166 66 172 68 178 L56 176 C58 186 62 192 62 200 Z" fill="#6b7a66"/>
+      <path d="M110 200 C114 194 122 190 124 184 L116 184 C122 176 128 170 132 164 L134 174 C140 168 148 168 156 162 L150 174 C158 172 164 174 170 172 L156 184 C150 190 142 192 136 200 Z" fill="#5c6b58"/>
+      <g transform="translate(70 120) rotate(-8) scale(1.25)"><path d="M0 16 C2 40 -4 60 2 90" fill="none" stroke="#5f6b4a" stroke-width="2.2" stroke-linecap="round"/><path d="M-4.7 -5.0 L-12.0 -11.1 M-4.3 -5.5 L-13.3 -15.0 M-3.8 -5.9 L-9.8 -15.6 M-3.2 -6.3 L-9.8 -19.8 M-2.5 -6.6 L-6.4 -19.0 M-1.7 -6.8 L-5.2 -22.9 M-0.9 -7.0 L-2.2 -20.8 M0.0 -7.0 L0.0 -24.0 M0.9 -7.0 L2.2 -20.8 M1.7 -6.8 L5.2 -22.9 M2.5 -6.6 L6.4 -19.0 M3.2 -6.3 L9.8 -19.8 M3.8 -5.9 L9.8 -15.6 M4.3 -5.5 L13.3 -15.0 M4.7 -5.0 L12.0 -11.1" stroke="#9a5fc0" stroke-width="2.4" stroke-linecap="round"/><path d="M-13 -6 C-8 -12 8 -12 13 -6 C8 -9 -8 -9 -13 -6 Z" fill="#7d4aa0"/><g fill="#6f7d58" stroke="#3e4632" stroke-width="0.6"><path d="M-10.4 14 Q-7.2 4 -4.0 14 Z" /><path d="M-6.8 14 Q-3.6 4 -0.4 14 Z" /><path d="M-3.2 14 Q0.0 4 3.2 14 Z" /><path d="M0.4 14 Q3.6 4 6.8 14 Z" /><path d="M4.0 14 Q7.2 4 10.4 14 Z" /><path d="M-12.0 8 Q-8.8 -2 -5.6 8 Z" /><path d="M-7.6 8 Q-4.4 -2 -1.2 8 Z" /><path d="M-3.2 8 Q0.0 -2 3.2 8 Z" /><path d="M1.2 8 Q4.4 -2 7.6 8 Z" /><path d="M5.6 8 Q8.8 -2 12.0 8 Z" /><path d="M-13.2 2 Q-10.0 -8 -6.8 2 Z" /><path d="M-9.2 2 Q-6.0 -8 -2.8 2 Z" /><path d="M-5.2 2 Q-2.0 -8 1.2 2 Z" /><path d="M-1.2 2 Q2.0 -8 5.2 2 Z" /><path d="M2.8 2 Q6.0 -8 9.2 2 Z" /><path d="M6.8 2 Q10.0 -8 13.2 2 Z" /></g><path d="M-11 12 C-6 18 6 18 11 12 L8 16 C3 19 -3 19 -8 16 Z" fill="#56613f"/></g><g transform="translate(128 146) rotate(10) scale(1.0)"><path d="M0 16 C-2 34 4 50 0 70" fill="none" stroke="#5f6b4a" stroke-width="2.2" stroke-linecap="round"/><path d="M-4.7 -5.0 L-12.0 -11.1 M-4.3 -5.5 L-13.3 -15.0 M-3.8 -5.9 L-9.8 -15.6 M-3.2 -6.3 L-9.8 -19.8 M-2.5 -6.6 L-6.4 -19.0 M-1.7 -6.8 L-5.2 -22.9 M-0.9 -7.0 L-2.2 -20.8 M0.0 -7.0 L0.0 -24.0 M0.9 -7.0 L2.2 -20.8 M1.7 -6.8 L5.2 -22.9 M2.5 -6.6 L6.4 -19.0 M3.2 -6.3 L9.8 -19.8 M3.8 -5.9 L9.8 -15.6 M4.3 -5.5 L13.3 -15.0 M4.7 -5.0 L12.0 -11.1" stroke="#9a5fc0" stroke-width="2.4" stroke-linecap="round"/><path d="M-13 -6 C-8 -12 8 -12 13 -6 C8 -9 -8 -9 -13 -6 Z" fill="#7d4aa0"/><g fill="#6f7d58" stroke="#3e4632" stroke-width="0.6"><path d="M-10.4 14 Q-7.2 4 -4.0 14 Z" /><path d="M-6.8 14 Q-3.6 4 -0.4 14 Z" /><path d="M-3.2 14 Q0.0 4 3.2 14 Z" /><path d="M0.4 14 Q3.6 4 6.8 14 Z" /><path d="M4.0 14 Q7.2 4 10.4 14 Z" /><path d="M-12.0 8 Q-8.8 -2 -5.6 8 Z" /><path d="M-7.6 8 Q-4.4 -2 -1.2 8 Z" /><path d="M-3.2 8 Q0.0 -2 3.2 8 Z" /><path d="M1.2 8 Q4.4 -2 7.6 8 Z" /><path d="M5.6 8 Q8.8 -2 12.0 8 Z" /><path d="M-13.2 2 Q-10.0 -8 -6.8 2 Z" /><path d="M-9.2 2 Q-6.0 -8 -2.8 2 Z" /><path d="M-5.2 2 Q-2.0 -8 1.2 2 Z" /><path d="M-1.2 2 Q2.0 -8 5.2 2 Z" /><path d="M2.8 2 Q6.0 -8 9.2 2 Z" /><path d="M6.8 2 Q10.0 -8 13.2 2 Z" /></g><path d="M-11 12 C-6 18 6 18 11 12 L8 16 C3 19 -3 19 -8 16 Z" fill="#56613f"/></g><g transform="translate(26 160) rotate(-16) scale(0.85)"><path d="M0 16 C3 30 0 44 4 60" fill="none" stroke="#5f6b4a" stroke-width="2.2" stroke-linecap="round"/><path d="M-4.7 -5.0 L-12.0 -11.1 M-4.3 -5.5 L-13.3 -15.0 M-3.8 -5.9 L-9.8 -15.6 M-3.2 -6.3 L-9.8 -19.8 M-2.5 -6.6 L-6.4 -19.0 M-1.7 -6.8 L-5.2 -22.9 M-0.9 -7.0 L-2.2 -20.8 M0.0 -7.0 L0.0 -24.0 M0.9 -7.0 L2.2 -20.8 M1.7 -6.8 L5.2 -22.9 M2.5 -6.6 L6.4 -19.0 M3.2 -6.3 L9.8 -19.8 M3.8 -5.9 L9.8 -15.6 M4.3 -5.5 L13.3 -15.0 M4.7 -5.0 L12.0 -11.1" stroke="#9a5fc0" stroke-width="2.4" stroke-linecap="round"/><path d="M-13 -6 C-8 -12 8 -12 13 -6 C8 -9 -8 -9 -13 -6 Z" fill="#7d4aa0"/><g fill="#6f7d58" stroke="#3e4632" stroke-width="0.6"><path d="M-10.4 14 Q-7.2 4 -4.0 14 Z" /><path d="M-6.8 14 Q-3.6 4 -0.4 14 Z" /><path d="M-3.2 14 Q0.0 4 3.2 14 Z" /><path d="M0.4 14 Q3.6 4 6.8 14 Z" /><path d="M4.0 14 Q7.2 4 10.4 14 Z" /><path d="M-12.0 8 Q-8.8 -2 -5.6 8 Z" /><path d="M-7.6 8 Q-4.4 -2 -1.2 8 Z" /><path d="M-3.2 8 Q0.0 -2 3.2 8 Z" /><path d="M1.2 8 Q4.4 -2 7.6 8 Z" /><path d="M5.6 8 Q8.8 -2 12.0 8 Z" /><path d="M-13.2 2 Q-10.0 -8 -6.8 2 Z" /><path d="M-9.2 2 Q-6.0 -8 -2.8 2 Z" /><path d="M-5.2 2 Q-2.0 -8 1.2 2 Z" /><path d="M-1.2 2 Q2.0 -8 5.2 2 Z" /><path d="M2.8 2 Q6.0 -8 9.2 2 Z" /><path d="M6.8 2 Q10.0 -8 13.2 2 Z" /></g><path d="M-11 12 C-6 18 6 18 11 12 L8 16 C3 19 -3 19 -8 16 Z" fill="#56613f"/></g>
     </g>
+    <!-- tabla -->
+    <path d="M560 200 L586 180 L800 180 L800 200 Z" fill="url(#c-board)"/>
+    <ellipse cx="692" cy="182" rx="84" ry="7" fill="#000000" opacity="0.45" filter="url(#c-soft)"/>
+    <!-- Torta del Casar abierta -->
+    <path fill="url(#c-rind)" d="M616 136 C608 150 610 168 624 176 C650 188 734 188 760 176 C774 168 776 150 768 136 Z"/>
+    <path fill="#d9a560" opacity="0.35" d="M630 150 C640 160 660 166 680 168 C660 170 636 164 626 156 Z"/>    <g fill="#e2b874" opacity="0.28">
+      <ellipse cx="640" cy="166" rx="9" ry="3"/><ellipse cx="702" cy="174" rx="12" ry="3"/><ellipse cx="744" cy="162" rx="7" ry="2.6"/><ellipse cx="672" cy="160" rx="5" ry="1.8"/><ellipse cx="724" cy="168" rx="4" ry="1.5"/><ellipse cx="656" cy="176" rx="6" ry="1.8"/><ellipse cx="758" cy="150" rx="4" ry="2"/>
+    </g>
+    <g fill="none" stroke="#4a2c12" stroke-width="0.9" opacity="0.55" stroke-linecap="round">
+      <path d="M630 156 C636 160 638 168 636 176"/><path d="M688 160 C690 168 686 176 690 184"/><path d="M736 154 C740 162 738 170 742 178"/><path d="M660 172 C666 176 672 178 678 182"/>
+    </g>
+    <path fill="#9a6630" d="M616 136 C618 126 650 119 692 119 C734 119 766 126 768 136 C766 146 734 153 692 153 C650 153 618 146 616 136 Z"/>
+    <ellipse cx="692" cy="137" rx="66" ry="13" fill="url(#c-cream)"/>
+    <path fill="#f1dfae" d="M640 145 C640 152 643 158 640 162 C637 165 633 163 634 158 C635 154 633 149 634 144 Z"/>
+    <path fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity="0.5" d="M660 132 C672 128 690 128 702 130"/>
+    <!-- cuchara -->
+    <path d="M706 134 L752 92" stroke="#2a2420" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M704 134 L750 90" stroke="#cfcac2" stroke-width="3.2" stroke-linecap="round"/>
+    <ellipse cx="704" cy="135" rx="9" ry="3.2" fill="#e6d19c"/>
+    <text x="400" y="74" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700" letter-spacing="1">awesome-extremadura</text>
+    <text x="400" y="104" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.62" font-weight="400" letter-spacing="3">SOFTWARE OPEN SOURCE PARA EXTREMADURA</text>
   </g>
 </svg>
