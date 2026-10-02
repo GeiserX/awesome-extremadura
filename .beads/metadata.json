@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "extremadura",
+  "project_id": "df0bf153-dfb4-48a5-ba40-3be667c3b13e"
+}
